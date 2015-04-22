@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.1.61, for redhat-linux-gnu (x86_64)
 --
--- Host: localhost    Database: fcgr_ngslims
+-- Host: localhost    Database: ingslims
 -- ------------------------------------------------------
 -- Server version	5.1.61
 
