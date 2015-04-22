@@ -1,0 +1,232 @@
+html {
+	overflow-y: scroll;
+}
+body {
+    background: none repeat scroll 0 0 #0A1691;
+    font: 0.8em/1.5em Arial,Helvetica,sans-serif;
+    margin: 20px auto;
+    width: auto;
+}
+a {
+    color: #333333;
+}
+table {
+border-color: black;
+border-collapse: collapse;
+margin-top: 2px;
+margin-bottom: 10px;
+margin-left: auto;
+margin-right: auto;
+}
+table.one_entry {
+border-color: black;
+width: 400px;
+border-collapse: collapse;
+margin-top: 2px;
+margin-bottom: 10px;
+margin-left: auto;
+margin-right: auto;
+}
+span.pu span {
+    position: absolute;
+    display: none;
+    margin: 20px 0 0 0px;
+    padding: 3px 3px 3px 3px;
+    border-style:solid;
+    border-color:black;
+    border-width:1px;
+    border-radius: 7px;
+	white-space: normal;
+    z-index: 6;
+}
+span.pu:hover span {
+    display: block;
+    left: 25%;
+    color: white;
+    background: black;
+    width: auto;
+    max-width: 650px;
+}
+th, td {
+white-space: nowrap;
+border-collapse: collapse;
+border-color: black;
+margin-left: auto;
+margin-right: auto;
+padding: 5px;
+font-size: 14px;
+}
+div.dataTables_wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+tr {
+border-collapse: collapse;
+background-color: white;
+}
+td.required_field {
+border-collapse: collapse;
+padding: 5px;
+text-align: right;
+font-weight: bold;
+background-color: #FFA500;
+margin-left: auto;
+margin-right: auto;
+}
+td.show_one_td {
+border-collapse: collapse;
+padding: 5px;
+text-align: right;
+font-weight: bold;
+background-color: #CCCCCC;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* MENU */
+
+#nav {
+ background: #e5e5e5;
+ float: left;
+ margin: 0; padding: 0;
+ border-bottom: none;
+ z-index: 10;
+}
+
+#nav li a, #nav li {
+ float: left;
+ z-index: 10;
+}
+
+#nav li {
+ list-style: none;
+ position: relative;
+ width: auto;
+ z-index: 10;
+}
+
+#nav li a {
+ padding: 0.2em 0.4em;
+ text-decoration: none;
+ color: white;
+ background: #292929;
+ background: -moz-linear-gradient(top, black, #3c3c3c 1px, #292929 25px);
+ background: -webkit-gradient(linear, left top, left 25, from(black), color-stop(4%, #3c3c3c), to(#292929));
+ border-right: 2px solid black;
+ border-left: 2px solid black;
+ border-bottom: 1px solid black;
+ border-top: 1px solid black;
+ z-index: 10;
+}
+
+#nav li a:hover {
+ background: #2a0d65;
+ background: -moz-linear-gradient(top, #EDA405, #BA6900);
+ /* background: -webkit-gradient(linear, left top, left bottom, from(#11032e), to(#2a0d65)); */
+ background: -webkit-gradient(linear, left top, left bottom, from(#EDA405), to(#BA6900));
+ z-index: 10;
+}
+
+
+/* SUB Menu */
+
+.hasChildren {
+	position: absolute;
+	width: 5px; height: 5px;
+	background: black;
+	right : 0;
+	bottom: 0;
+}
+
+#nav li ul {
+ display: none;
+ position: absolute;
+ left: 0;
+ top: 100%;
+ padding: 0; margin: 0;
+}
+
+#nav li:hover > ul {
+ display: block;
+}
+
+#nav li ul li, #nav li ul li a {
+ float: none;
+}
+
+#nav li ul li {
+ _display: inline; /* for IE6 */
+}
+
+#nav li ul li a {
+ width: 90px;
+ display: block;
+}
+
+/* SUBSUB Menu */
+
+#nav li ul li ul {
+ display: none;
+}
+
+#nav li ul li:hover ul {
+ left: 100%;
+ top: 0;
+}
+
+#nav li ul 
+
+/* style for tool tip */
+.ui-tooltip, .arrow:after {
+background: black;
+border: 2px solid white;
+}
+.ui-tooltip {
+padding: 10px 20px;
+color: white;
+border-radius: 20px;
+font: bold 14px "Helvetica Neue", Sans-Serif;
+text-transform: uppercase;
+box-shadow: 0 0 7px black;
+}
+.arrow {
+width: 70px;
+height: 16px;
+overflow: hidden;
+position: absolute;
+left: 50%;
+margin-left: -35px;
+bottom: -16px;
+}
+.arrow.top {
+top: -16px;
+bottom: auto;
+}
+.arrow.left {
+left: 20%;
+}
+.arrow:after {
+content: "";
+position: absolute;
+left: 20px;
+top: -20px;
+width: 25px;
+height: 25px;
+box-shadow: 6px 5px 9px -9px black;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.arrow.top:after {
+bottom: -20px;
+top: auto;
+}
+
+.required label {
+    font-weight: bold;
+}
+.required label:after {
+    color: red;
+    content: ' *';
+    display:inline;
+}
